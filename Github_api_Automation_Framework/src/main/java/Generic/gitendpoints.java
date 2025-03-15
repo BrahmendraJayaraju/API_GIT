@@ -6,5 +6,4 @@ public interface gitendpoints {
 	String postoRepo = "/user/repos";
 	String updateRpo = "/repos/{owner}/{repo}";
 	String deleteRepo = "/repos/{owner}/{repo}";
-
 }
