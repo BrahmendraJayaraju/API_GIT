@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Generic.SendReportEmail">
+      <class name="Features.PostOperation">
         <methods>
-          <include name="sendEmail"/>
+          <include name="CreateRepoInfo"/>
+          <include name="extentReportSetUp"/>
+          <include name="PostConditionTestStatus"/>
+          <include name="addToReport"/>
+          <include name="openapp"/>
         </methods>
-      </class> <!-- Generic.SendReportEmail -->
+      </class> <!-- Features.PostOperation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
