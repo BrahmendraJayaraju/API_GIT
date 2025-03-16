@@ -49,7 +49,7 @@ public class Baseclass {
 
 	{
 
-		String ReportPath = "apireports/Gitapireport.html";
+		String ReportPath = "apireports/Git_Api_Report.html";
 
 		reports = new ExtentReports();
 		htmlReporter = new ExtentSparkReporter(ReportPath);

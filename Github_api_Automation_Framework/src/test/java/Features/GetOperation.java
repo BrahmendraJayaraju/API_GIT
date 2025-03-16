@@ -12,10 +12,10 @@ import io.restassured.http.ContentType;
 import static io.restassured.RestAssured.*;
 
 @Listeners(TestListeners.class)
-public class TestRepogetOperation extends Baseclass {
+public class GetOperation extends Baseclass {
 
-	@Test(priority = 0, groups = { "Regression" }, description = "get the details of repo mugimeshi")
-	public void GetRepoInfo() throws Exception {
+	@Test(priority = 0, groups = { "Regression" }, description = "Get Git Repo Details")
+	public void Get_Repo_Info() throws Exception {
 		Baseclass.createTestName("Testcase number TC3500", "Testername=brahmendra_jayaraju");
 
 		given().pathParam("owner", WebUtilityKeys.readPropertyFiles(Gitdata, "ownerName"))
@@ -26,19 +26,19 @@ public class TestRepogetOperation extends Baseclass {
 	}
 
 
-	@Test(priority = 3, groups = { "Regression" }, description = "Fail this to check description")
-	public void DeleteRepoFail() throws Exception {
+	@Test(priority = 3, groups = { "Regression" }, description = "Fail This TC for just to Show in Report ")
+	public void Fail_this_TC() throws Exception {
 
-		Baseclass.createTestName("Testcase number TCFail9000", "Testername=shashank");
+		Baseclass.createTestName("Testcase number TC9000", "Testername=shashank");
 		given().delete(" http://localhost:3000/posts/1070").then().log().all().assertThat().statusCode(200);
 
 	}
 
-	@Test(priority = 4, groups = { "Regression" }, description = "skip this to check description", dependsOnMethods = {
-			"DeleteRepoFail" })
-	public void DeleteRepoSkip() throws Exception {
+	@Test(priority = 4, groups = { "Regression" }, description = "Skip  This TC for just to Show in Report", dependsOnMethods = {
+			"Fail_this_TC" })
+	public void Skip_TC() throws Exception {
 
-		Baseclass.createTestName("Testcase number TcSkip9000", "Testername=jayaraju");
+		Baseclass.createTestName("Testcase number TC789", "Testername=jayaraju");
 		given().delete("http://localhost:3000/posts/104").then().log().all().assertThat().statusCode(200);
 
 	}

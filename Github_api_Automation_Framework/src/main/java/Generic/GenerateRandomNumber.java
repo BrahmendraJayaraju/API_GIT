@@ -2,7 +2,7 @@ package Generic;
 
 import java.util.Random;
 
-public class generaterandom {
+public class GenerateRandomNumber {
 
 	public static int getRandomNumber() {
 

@@ -17,7 +17,7 @@ public class SendReportEmail {
 
 		if (WebUtilityKeys.readPropertyFiles(filepath, "Sanity").equals("Yes".trim())) {
 			EmailAttachment attachment = new EmailAttachment();
-			attachment.setPath("./apireports/Gitapireport.html");
+			attachment.setPath("./apireports/Git_Api_Report.html");
 
 			attachment.setDisposition(EmailAttachment.ATTACHMENT);
 
@@ -40,7 +40,7 @@ public class SendReportEmail {
 				email.setMsg(
 						"Hi Team,\n\nplease find attached Sanity automation ExtentReport. Download and open in Chrome Broswer.\n\n\nThanksRegards,\nBrahmendra jayaraju\n+1 (302) 981-6805");
 
-				email.addTo("brahmendra.jayaraju67@gmail.com");
+				
 				email.addTo("manu_1995_16@yopmail.net");
 
 			}
@@ -62,7 +62,7 @@ public class SendReportEmail {
 		{
 
 			EmailAttachment attachment = new EmailAttachment();
-			attachment.setPath("./apireports/Gitapireport.html");
+			attachment.setPath("./apireports/Git_Api_Report.html");
 			attachment.setDisposition(EmailAttachment.ATTACHMENT);
 			attachment.setDescription("Automation Regression Extent Report");
 			attachment.setName("Api_Automation_Report.html");
@@ -82,7 +82,7 @@ public class SendReportEmail {
 				email.setMsg(
 						"Hi Team,\n\nplease find attached Regression automation ExtentReport. Download and  open in Chrome Broswer.\n\n\nThanksRegards,\nBrahmendra jayaraju\n+1 (302) 981-6805");
 
-				email.addTo("brahmendra.jayaraju67@gmail.com");
+				
 
 				email.addTo("manu_1995_16@yopmail.net");
 
@@ -92,7 +92,7 @@ public class SendReportEmail {
 
 			{
 
-				;
+				
 
 			}
 

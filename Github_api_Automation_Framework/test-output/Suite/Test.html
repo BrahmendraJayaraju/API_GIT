@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>5/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 15 23:15:15 EDT 2025</td>
+<td>Started on:</td><td>Sun Mar 16 00:03:03 EDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9152 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8897 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,7 +75,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Features.TestRepogetOperation.DeleteRepoFail()'><b>DeleteRepoFail</b><br>Test class: Features.TestRepogetOperation<br>Test method: Fail this to check description</td>
+<td title='Features.GetOperation.Fail_this_TC()'><b>Fail_this_TC</b><br>Test class: Features.GetOperation<br>Test method: Fail This TC for just to Show in Report </td>
 <td><div><pre>java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.connect0(Native Method)
 	at java.base/sun.nio.ch.Net.connect(Net.java:589)
@@ -157,10 +157,10 @@ function toggleAllBoxes() {
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
 	at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy:184)
 	at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy)
-	at Features.TestRepogetOperation.DeleteRepoFail(TestRepogetOperation.java:33)
+	at Features.GetOperation.Fail_this_TC(GetOperation.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace935818862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace935818862'><pre>java.net.ConnectException: Connection refused
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1620368915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1620368915'><pre>java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.connect0(Native Method)
 	at java.base/sun.nio.ch.Net.connect(Net.java:589)
 	at java.base/sun.nio.ch.Net.connect(Net.java:578)
@@ -253,7 +253,7 @@ function toggleAllBoxes() {
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
 	at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy:184)
 	at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy)
-	at Features.TestRepogetOperation.DeleteRepoFail(TestRepogetOperation.java:33)
+	at Features.GetOperation.Fail_this_TC(GetOperation.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -282,7 +282,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Features.TestRepogetOperation@6c64cb25</td></tr>
+<td>Features.GetOperation@6ae5aa72</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -292,30 +292,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Features.PostOperation.CreateRepoInfo()'><b>CreateRepoInfo</b><br>Test class: Features.PostOperation<br>Test method: create  repo mugimeshi</td>
-<td></td>
-<td>4</td>
-<td>Features.PostOperation@5876a9af</td></tr>
-<tr>
-<td title='Features.DeleteOperation.DeleteRepo()'><b>DeleteRepo</b><br>Test class: Features.DeleteOperation<br>Test method: deletemugimeshi</td>
+<td title='Features.DeleteOperation.Delete_Git_Repo()'><b>Delete_Git_Repo</b><br>Test class: Features.DeleteOperation<br>Test method: Delete Git Repository</td>
 <td></td>
 <td>0</td>
-<td>Features.DeleteOperation@6ae5aa72</td></tr>
-<tr>
-<td title='Features.TestRepogetOperation.GetRepoInfo()'><b>GetRepoInfo</b><br>Test class: Features.TestRepogetOperation<br>Test method: get the details of repo mugimeshi</td>
-<td></td>
-<td>0</td>
-<td>Features.TestRepogetOperation@6c64cb25</td></tr>
+<td>Features.DeleteOperation@222545dc</td></tr>
 <tr>
 <td title='Generic.SendReportEmail.sendEmail()'><b>sendEmail</b><br>Test class: Generic.SendReportEmail</td>
 <td></td>
 <td>1</td>
-<td>Generic.SendReportEmail@3a93b025</td></tr>
+<td>Generic.SendReportEmail@35cabb2a</td></tr>
 <tr>
-<td title='Features.patchOperation.CreateRepoInfo()'><b>CreateRepoInfo</b><br>Test class: Features.patchOperation<br>Test method: patho mugimeshi</td>
+<td title='Features.PostOperation.Update_Repo()'><b>Update_Repo</b><br>Test class: Features.PostOperation<br>Test method: Create  Git Repository</td>
+<td></td>
+<td>4</td>
+<td>Features.PostOperation@7ec7ffd3</td></tr>
+<tr>
+<td title='Features.GetOperation.Get_Repo_Info()'><b>Get_Repo_Info</b><br>Test class: Features.GetOperation<br>Test method: Get Git Repo Details</td>
 <td></td>
 <td>0</td>
-<td>Features.patchOperation@515aebb0</td></tr>
+<td>Features.GetOperation@6ae5aa72</td></tr>
+<tr>
+<td title='Features.PatchOperation.Create_Repo()'><b>Create_Repo</b><br>Test class: Features.PatchOperation<br>Test method: Update Git Repository</td>
+<td></td>
+<td>0</td>
+<td>Features.PatchOperation@dd8ba08</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -325,11 +325,11 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Features.TestRepogetOperation.DeleteRepoSkip()'><b>DeleteRepoSkip</b><br>Test class: Features.TestRepogetOperation<br>Test method: skip this to check description</td>
-<td><div><pre>java.lang.Throwable: Method TestRepogetOperation.DeleteRepoSkip()[pri:4, instance:Features.TestRepogetOperation@6c64cb25] depends on not successfully finished methods
+<td title='Features.GetOperation.Skip_TC()'><b>Skip_TC</b><br>Test class: Features.GetOperation<br>Test method: Skip  This TC for just to Show in Report</td>
+<td><div><pre>java.lang.Throwable: Method GetOperation.Skip_TC()[pri:4, instance:Features.GetOperation@6ae5aa72] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1745904086", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1745904086'><pre>java.lang.Throwable: Method TestRepogetOperation.DeleteRepoSkip()[pri:4, instance:Features.TestRepogetOperation@6c64cb25] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1684368286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1684368286'><pre>java.lang.Throwable: Method GetOperation.Skip_TC()[pri:4, instance:Features.GetOperation@6ae5aa72] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -351,7 +351,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Features.TestRepogetOperation@6c64cb25</td></tr>
+<td>Features.GetOperation@6ae5aa72</td></tr>
 </table><p>
 </body>
 </html>

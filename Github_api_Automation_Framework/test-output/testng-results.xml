@@ -1,308 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="10" passed="5" failed="1" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-15T23:15:15 GMT-04:00" name="Suite" finished-at="2025-03-15T23:15:24 GMT-04:00" duration-ms="9152">
+  <suite started-at="2025-03-16T00:05:56 GMT-04:00" name="Default suite" finished-at="2025-03-16T00:06:02 GMT-04:00" duration-ms="5602">
     <groups>
       <group name="Regression">
-        <method signature="DeleteOperation.DeleteRepo()[pri:0, instance:Features.DeleteOperation@6ae5aa72]" name="DeleteRepo" class="Features.DeleteOperation"/>
-        <method signature="TestRepogetOperation.DeleteRepoFail()[pri:3, instance:Features.TestRepogetOperation@6c64cb25]" name="DeleteRepoFail" class="Features.TestRepogetOperation"/>
-        <method signature="TestRepogetOperation.DeleteRepoSkip()[pri:4, instance:Features.TestRepogetOperation@6c64cb25]" name="DeleteRepoSkip" class="Features.TestRepogetOperation"/>
-        <method signature="TestRepogetOperation.GetRepoInfo()[pri:0, instance:Features.TestRepogetOperation@6c64cb25]" name="GetRepoInfo" class="Features.TestRepogetOperation"/>
-        <method signature="PostOperation.CreateRepoInfo()[pri:0, instance:Features.PostOperation@5876a9af]" name="CreateRepoInfo" class="Features.PostOperation"/>
-        <method signature="patchOperation.CreateRepoInfo()[pri:0, instance:Features.patchOperation@515aebb0]" name="CreateRepoInfo" class="Features.patchOperation"/>
+        <method signature="DeleteOperation.Delete_Git_Repo()[pri:0, instance:Features.DeleteOperation@7b9a4292]" name="Delete_Git_Repo" class="Features.DeleteOperation"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-03-15T23:15:15 GMT-04:00" name="Test" finished-at="2025-03-15T23:15:24 GMT-04:00" duration-ms="9152">
-      <class name="Features.TestRepogetOperation">
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.TestRepogetOperation@6c64cb25]" started-at="2025-03-15T23:15:22 GMT-04:00" name="openapp" finished-at="2025-03-15T23:15:22 GMT-04:00" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openapp -->
-        <test-method signature="GetRepoInfo()[pri:0, instance:Features.TestRepogetOperation@6c64cb25]" started-at="2025-03-15T23:15:22 GMT-04:00" name="GetRepoInfo" description="get the details of repo mugimeshi" finished-at="2025-03-15T23:15:22 GMT-04:00" duration-ms="261" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetRepoInfo -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.TestRepogetOperation@6c64cb25]" started-at="2025-03-15T23:15:22 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T23:15:22 GMT-04:00" duration-ms="33" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GetRepoInfo status=SUCCESS method=TestRepogetOperation.GetRepoInfo()[pri:0, instance:Features.TestRepogetOperation@6c64cb25] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.TestRepogetOperation@6c64cb25]" started-at="2025-03-15T23:15:22 GMT-04:00" name="openapp" finished-at="2025-03-15T23:15:22 GMT-04:00" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openapp -->
-        <test-method signature="DeleteRepoFail()[pri:3, instance:Features.TestRepogetOperation@6c64cb25]" started-at="2025-03-15T23:15:22 GMT-04:00" name="DeleteRepoFail" description="Fail this to check description" finished-at="2025-03-15T23:15:22 GMT-04:00" duration-ms="39" status="FAIL">
-          <exception class="java.net.ConnectException">
-            <message>
-              <![CDATA[Connection refused]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.net.ConnectException: Connection refused
-at java.base/sun.nio.ch.Net.connect0(Native Method)
-at java.base/sun.nio.ch.Net.connect(Net.java:589)
-at java.base/sun.nio.ch.Net.connect(Net.java:578)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-at java.base/java.net.Socket.connect(Socket.java:760)
-at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
-at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
-at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
-at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1480)
-at io.restassured.internal.RequestSpecificationImpl.this$2$sendHttpRequest(RequestSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
-at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1229)
-at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
-at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.FilterContext$next.call(Unknown Source)
-at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.FilterContext$next.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
-at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
-at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
-at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
-at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy:184)
-at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy)
-at Features.TestRepogetOperation.DeleteRepoFail(TestRepogetOperation.java:33)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.net.ConnectException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteRepoFail -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.TestRepogetOperation@6c64cb25]" started-at="2025-03-15T23:15:22 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T23:15:22 GMT-04:00" duration-ms="69" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DeleteRepoFail status=FAILURE method=TestRepogetOperation.DeleteRepoFail()[pri:3, instance:Features.TestRepogetOperation@6c64cb25] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PostConditionTestStatus -->
-        <test-method signature="DeleteRepoSkip()[pri:4, instance:Features.TestRepogetOperation@6c64cb25]" started-at="2025-03-15T23:15:22 GMT-04:00" name="DeleteRepoSkip" description="skip this to check description" finished-at="2025-03-15T23:15:22 GMT-04:00" depends-on-methods="Features.TestRepogetOperation.DeleteRepoFail" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestRepogetOperation.DeleteRepoSkip()[pri:4, instance:Features.TestRepogetOperation@6c64cb25] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestRepogetOperation.DeleteRepoSkip()[pri:4, instance:Features.TestRepogetOperation@6c64cb25] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteRepoSkip -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.TestRepogetOperation@6c64cb25]" started-at="2025-03-15T23:15:22 GMT-04:00" name="addToReport" finished-at="2025-03-15T23:15:22 GMT-04:00" duration-ms="33" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToReport -->
-      </class> <!-- Features.TestRepogetOperation -->
-      <class name="Features.PostOperation">
-        <test-method is-config="true" signature="extentReportSetUp()[pri:0, instance:Features.PostOperation@5876a9af]" started-at="2025-03-15T23:15:14 GMT-04:00" name="extentReportSetUp" finished-at="2025-03-15T23:15:15 GMT-04:00" duration-ms="502" status="PASS">
+    <test started-at="2025-03-16T00:05:56 GMT-04:00" name="Default test" finished-at="2025-03-16T00:06:02 GMT-04:00" duration-ms="5602">
+      <class name="Features.DeleteOperation">
+        <test-method is-config="true" signature="extentReportSetUp()[pri:0, instance:Features.DeleteOperation@7b9a4292]" started-at="2025-03-16T00:05:56 GMT-04:00" name="extentReportSetUp" finished-at="2025-03-16T00:05:56 GMT-04:00" duration-ms="519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportSetUp -->
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.PostOperation@5876a9af]" started-at="2025-03-15T23:15:15 GMT-04:00" name="openapp" finished-at="2025-03-15T23:15:16 GMT-04:00" duration-ms="707" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.DeleteOperation@7b9a4292]" started-at="2025-03-16T00:05:57 GMT-04:00" name="openapp" finished-at="2025-03-16T00:05:57 GMT-04:00" duration-ms="735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="CreateRepoInfo()[pri:0, instance:Features.PostOperation@5876a9af]" started-at="2025-03-15T23:15:16 GMT-04:00" name="CreateRepoInfo" description="create  repo mugimeshi" finished-at="2025-03-15T23:15:20 GMT-04:00" duration-ms="4666" status="PASS">
+        <test-method signature="Delete_Git_Repo()[pri:0, instance:Features.DeleteOperation@7b9a4292]" started-at="2025-03-16T00:05:57 GMT-04:00" name="Delete_Git_Repo" description="Delete Git Repository" finished-at="2025-03-16T00:06:01 GMT-04:00" duration-ms="4119" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateRepoInfo -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.PostOperation@5876a9af]" started-at="2025-03-15T23:15:20 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T23:15:21 GMT-04:00" duration-ms="604" status="PASS">
+        </test-method> <!-- Delete_Git_Repo -->
+        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.DeleteOperation@7b9a4292]" started-at="2025-03-16T00:06:01 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-16T00:06:02 GMT-04:00" duration-ms="652" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CreateRepoInfo status=SUCCESS method=PostOperation.CreateRepoInfo()[pri:0, instance:Features.PostOperation@5876a9af] output={null}]]]>
+                <![CDATA[[TestResult name=Delete_Git_Repo status=SUCCESS method=DeleteOperation.Delete_Git_Repo()[pri:0, instance:Features.DeleteOperation@7b9a4292] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.PostOperation@5876a9af]" started-at="2025-03-15T23:15:21 GMT-04:00" name="addToReport" finished-at="2025-03-15T23:15:21 GMT-04:00" duration-ms="32" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToReport -->
-      </class> <!-- Features.PostOperation -->
-      <class name="Generic.SendReportEmail">
-        <test-method signature="sendEmail()[pri:0, instance:Generic.SendReportEmail@3a93b025]" started-at="2025-03-15T23:15:23 GMT-04:00" name="sendEmail" finished-at="2025-03-15T23:15:24 GMT-04:00" duration-ms="1406" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendEmail -->
-      </class> <!-- Generic.SendReportEmail -->
-      <class name="Features.DeleteOperation">
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.DeleteOperation@6ae5aa72]" started-at="2025-03-15T23:15:22 GMT-04:00" name="openapp" finished-at="2025-03-15T23:15:22 GMT-04:00" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openapp -->
-        <test-method signature="DeleteRepo()[pri:0, instance:Features.DeleteOperation@6ae5aa72]" started-at="2025-03-15T23:15:22 GMT-04:00" name="DeleteRepo" description="deletemugimeshi" finished-at="2025-03-15T23:15:23 GMT-04:00" duration-ms="484" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteRepo -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.DeleteOperation@6ae5aa72]" started-at="2025-03-15T23:15:23 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T23:15:23 GMT-04:00" duration-ms="36" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DeleteRepo status=SUCCESS method=DeleteOperation.DeleteRepo()[pri:0, instance:Features.DeleteOperation@6ae5aa72] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.DeleteOperation@6ae5aa72]" started-at="2025-03-15T23:15:23 GMT-04:00" name="addToReport" finished-at="2025-03-15T23:15:23 GMT-04:00" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.DeleteOperation@7b9a4292]" started-at="2025-03-16T00:06:02 GMT-04:00" name="addToReport" finished-at="2025-03-16T00:06:02 GMT-04:00" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToReport -->
       </class> <!-- Features.DeleteOperation -->
-      <class name="Features.patchOperation">
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.patchOperation@515aebb0]" started-at="2025-03-15T23:15:21 GMT-04:00" name="openapp" finished-at="2025-03-15T23:15:21 GMT-04:00" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openapp -->
-        <test-method signature="CreateRepoInfo()[pri:0, instance:Features.patchOperation@515aebb0]" started-at="2025-03-15T23:15:21 GMT-04:00" name="CreateRepoInfo" description="patho mugimeshi" finished-at="2025-03-15T23:15:22 GMT-04:00" duration-ms="499" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateRepoInfo -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.patchOperation@515aebb0]" started-at="2025-03-15T23:15:22 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T23:15:22 GMT-04:00" duration-ms="42" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CreateRepoInfo status=SUCCESS method=patchOperation.CreateRepoInfo()[pri:0, instance:Features.patchOperation@515aebb0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.patchOperation@515aebb0]" started-at="2025-03-15T23:15:22 GMT-04:00" name="addToReport" finished-at="2025-03-15T23:15:22 GMT-04:00" duration-ms="38" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToReport -->
-      </class> <!-- Features.patchOperation -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

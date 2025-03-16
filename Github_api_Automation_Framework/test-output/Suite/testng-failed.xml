@@ -3,16 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Features.TestRepogetOperation">
+      <class name="Features.GetOperation">
         <methods>
+          <include name="Fail_this_TC"/>
+          <include name="Skip_TC"/>
           <include name="extentReportSetUp"/>
           <include name="PostConditionTestStatus"/>
           <include name="addToReport"/>
-          <include name="DeleteRepoFail"/>
-          <include name="DeleteRepoSkip"/>
           <include name="openapp"/>
         </methods>
-      </class> <!-- Features.TestRepogetOperation -->
+      </class> <!-- Features.GetOperation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

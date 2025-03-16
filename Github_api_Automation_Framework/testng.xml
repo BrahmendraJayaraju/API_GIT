@@ -5,8 +5,8 @@
     <classes>
       
       <class name="Features.PostOperation"/>
-      <class name="Features.patchOperation"/>
-      <class name="Features.TestRepogetOperation"/>
+      <class name="Features.PatchOperation"/>
+      <class name="Features.GetOperation"/>
       <class name="Features.DeleteOperation"/>
       <class name="Generic.SendReportEmail"/>
     </classes>

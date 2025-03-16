@@ -1,15 +1,15 @@
 package genericPojo;
 
-public class project {
+public class Project {
 
-	// from git swagger 
+	// from git swagger
 	private String name;
 	private String description;
 	private String visibility;
-	
-	//constructor overloading
 
-	public project(String name,String description) {
+	// constructor overloading
+
+	public Project(String name, String description) {
 
 		super();
 
@@ -18,7 +18,7 @@ public class project {
 
 	}
 
-	public project(String name) {
+	public Project(String name) {
 		super();
 		this.name = name;
 	}
@@ -39,9 +39,7 @@ public class project {
 		this.description = description;
 	}
 
-
-
-	project() {
+	Project() {
 
 	}
 
