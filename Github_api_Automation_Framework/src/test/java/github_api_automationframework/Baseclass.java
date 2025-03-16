@@ -1,4 +1,5 @@
 package github_api_automationframework;
+import java.util.TimeZone;
 
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
@@ -49,6 +50,8 @@ public class Baseclass {
 
 	{
 
+		
+		TimeZone.setDefault(TimeZone.getTimeZone("America/New_York"));
 		String ReportPath = "apireports/Git_Api_Report.html";
 
 		reports = new ExtentReports();
