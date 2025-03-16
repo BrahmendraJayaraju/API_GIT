@@ -2,7 +2,7 @@
 <testng-results ignored="3" total="10" passed="5" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-15T19:57:41 GMT-04:00" name="Suite" finished-at="2025-03-15T19:57:49 GMT-04:00" duration-ms="8748">
+  <suite started-at="2025-03-15T22:25:09 GMT-04:00" name="Suite" finished-at="2025-03-15T22:25:18 GMT-04:00" duration-ms="8743">
     <groups>
       <group name="Regression">
         <method signature="DeleteOperation.DeleteRepo()[pri:0, instance:Features.DeleteOperation@37afeb11]" name="DeleteRepo" class="Features.DeleteOperation"/>
@@ -13,17 +13,17 @@
         <method signature="patchOperation.CreateRepoInfo()[pri:0, instance:Features.patchOperation@6b81ce95]" name="CreateRepoInfo" class="Features.patchOperation"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-03-15T19:57:41 GMT-04:00" name="Test" finished-at="2025-03-15T19:57:49 GMT-04:00" duration-ms="8748">
+    <test started-at="2025-03-15T22:25:09 GMT-04:00" name="Test" finished-at="2025-03-15T22:25:18 GMT-04:00" duration-ms="8743">
       <class name="Features.TestRepogetOperation">
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T19:57:47 GMT-04:00" name="openapp" finished-at="2025-03-15T19:57:47 GMT-04:00" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T22:25:16 GMT-04:00" name="openapp" finished-at="2025-03-15T22:25:16 GMT-04:00" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="GetRepoInfo()[pri:0, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T19:57:47 GMT-04:00" name="GetRepoInfo" description="get the details of repo mugimeshi" finished-at="2025-03-15T19:57:48 GMT-04:00" duration-ms="248" status="PASS">
+        <test-method signature="GetRepoInfo()[pri:0, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T22:25:16 GMT-04:00" name="GetRepoInfo" description="get the details of repo mugimeshi" finished-at="2025-03-15T22:25:16 GMT-04:00" duration-ms="211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetRepoInfo -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T19:57:48 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T19:57:48 GMT-04:00" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T22:25:16 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T22:25:16 GMT-04:00" duration-ms="38" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,11 +34,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T19:57:48 GMT-04:00" name="openapp" finished-at="2025-03-15T19:57:48 GMT-04:00" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T22:25:16 GMT-04:00" name="openapp" finished-at="2025-03-15T22:25:16 GMT-04:00" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="DeleteRepoFail()[pri:3, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T19:57:48 GMT-04:00" name="DeleteRepoFail" description="Fail this to check description" finished-at="2025-03-15T19:57:48 GMT-04:00" duration-ms="37" status="FAIL">
+        <test-method signature="DeleteRepoFail()[pri:3, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T22:25:16 GMT-04:00" name="DeleteRepoFail" description="Fail this to check description" finished-at="2025-03-15T22:25:16 GMT-04:00" duration-ms="36" status="FAIL">
           <exception class="java.net.ConnectException">
             <message>
               <![CDATA[Connection refused]]>
@@ -160,7 +160,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteRepoFail -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T19:57:48 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T19:57:48 GMT-04:00" duration-ms="52" status="PASS">
+        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T22:25:16 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T22:25:16 GMT-04:00" duration-ms="59" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -171,7 +171,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostConditionTestStatus -->
-        <test-method signature="DeleteRepoSkip()[pri:4, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T19:57:48 GMT-04:00" name="DeleteRepoSkip" description="skip this to check description" finished-at="2025-03-15T19:57:48 GMT-04:00" depends-on-methods="Features.TestRepogetOperation.DeleteRepoFail" duration-ms="0" status="SKIP">
+        <test-method signature="DeleteRepoSkip()[pri:4, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T22:25:16 GMT-04:00" name="DeleteRepoSkip" description="skip this to check description" finished-at="2025-03-15T22:25:16 GMT-04:00" depends-on-methods="Features.TestRepogetOperation.DeleteRepoFail" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method TestRepogetOperation.DeleteRepoSkip()[pri:4, instance:Features.TestRepogetOperation@52bf72b5] depends on not successfully finished methods]]>
@@ -203,25 +203,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteRepoSkip -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T19:57:48 GMT-04:00" name="addToReport" finished-at="2025-03-15T19:57:48 GMT-04:00" duration-ms="25" status="PASS">
+        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.TestRepogetOperation@52bf72b5]" started-at="2025-03-15T22:25:17 GMT-04:00" name="addToReport" finished-at="2025-03-15T22:25:17 GMT-04:00" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToReport -->
       </class> <!-- Features.TestRepogetOperation -->
       <class name="Features.PostOperation">
-        <test-method is-config="true" signature="extentReportSetUp()[pri:0, instance:Features.PostOperation@67d48005]" started-at="2025-03-15T19:57:40 GMT-04:00" name="extentReportSetUp" finished-at="2025-03-15T19:57:41 GMT-04:00" duration-ms="545" status="PASS">
+        <test-method is-config="true" signature="extentReportSetUp()[pri:0, instance:Features.PostOperation@67d48005]" started-at="2025-03-15T22:25:09 GMT-04:00" name="extentReportSetUp" finished-at="2025-03-15T22:25:09 GMT-04:00" duration-ms="539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportSetUp -->
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.PostOperation@67d48005]" started-at="2025-03-15T19:57:41 GMT-04:00" name="openapp" finished-at="2025-03-15T19:57:42 GMT-04:00" duration-ms="1126" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.PostOperation@67d48005]" started-at="2025-03-15T22:25:09 GMT-04:00" name="openapp" finished-at="2025-03-15T22:25:11 GMT-04:00" duration-ms="1121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="CreateRepoInfo()[pri:0, instance:Features.PostOperation@67d48005]" started-at="2025-03-15T19:57:42 GMT-04:00" name="CreateRepoInfo" description="create  repo mugimeshi" finished-at="2025-03-15T19:57:46 GMT-04:00" duration-ms="4322" status="PASS">
+        <test-method signature="CreateRepoInfo()[pri:0, instance:Features.PostOperation@67d48005]" started-at="2025-03-15T22:25:11 GMT-04:00" name="CreateRepoInfo" description="create  repo mugimeshi" finished-at="2025-03-15T22:25:15 GMT-04:00" duration-ms="4340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateRepoInfo -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.PostOperation@67d48005]" started-at="2025-03-15T19:57:46 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T19:57:47 GMT-04:00" duration-ms="576" status="PASS">
+        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.PostOperation@67d48005]" started-at="2025-03-15T22:25:15 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T22:25:16 GMT-04:00" duration-ms="602" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -232,27 +232,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.PostOperation@67d48005]" started-at="2025-03-15T19:57:47 GMT-04:00" name="addToReport" finished-at="2025-03-15T19:57:47 GMT-04:00" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.PostOperation@67d48005]" started-at="2025-03-15T22:25:16 GMT-04:00" name="addToReport" finished-at="2025-03-15T22:25:16 GMT-04:00" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToReport -->
       </class> <!-- Features.PostOperation -->
       <class name="Generic.SendReportEmail">
-        <test-method signature="sendEmail()[pri:0, instance:Generic.SendReportEmail@2d7275fc]" started-at="2025-03-15T19:57:48 GMT-04:00" name="sendEmail" finished-at="2025-03-15T19:57:49 GMT-04:00" duration-ms="1148" status="PASS">
+        <test-method signature="sendEmail()[pri:0, instance:Generic.SendReportEmail@2d7275fc]" started-at="2025-03-15T22:25:17 GMT-04:00" name="sendEmail" finished-at="2025-03-15T22:25:18 GMT-04:00" duration-ms="1010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendEmail -->
       </class> <!-- Generic.SendReportEmail -->
       <class name="Features.DeleteOperation">
-        <test-method signature="DeleteRepo()[pri:0, instance:Features.DeleteOperation@37afeb11]" started-at="2025-03-15T19:57:48 GMT-04:00" name="DeleteRepo" description="deletemugimeshi" finished-at="2025-03-15T19:57:48 GMT-04:00" duration-ms="369" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteRepo -->
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.DeleteOperation@37afeb11]" started-at="2025-03-15T19:57:48 GMT-04:00" name="openapp" finished-at="2025-03-15T19:57:48 GMT-04:00" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.DeleteOperation@37afeb11]" started-at="2025-03-15T22:25:17 GMT-04:00" name="openapp" finished-at="2025-03-15T22:25:17 GMT-04:00" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.DeleteOperation@37afeb11]" started-at="2025-03-15T19:57:48 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T19:57:48 GMT-04:00" duration-ms="44" status="PASS">
+        <test-method signature="DeleteRepo()[pri:0, instance:Features.DeleteOperation@37afeb11]" started-at="2025-03-15T22:25:17 GMT-04:00" name="DeleteRepo" description="deletemugimeshi" finished-at="2025-03-15T22:25:17 GMT-04:00" duration-ms="468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteRepo -->
+        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.DeleteOperation@37afeb11]" started-at="2025-03-15T22:25:17 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T22:25:17 GMT-04:00" duration-ms="39" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -263,21 +263,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.DeleteOperation@37afeb11]" started-at="2025-03-15T19:57:48 GMT-04:00" name="addToReport" finished-at="2025-03-15T19:57:48 GMT-04:00" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.DeleteOperation@37afeb11]" started-at="2025-03-15T22:25:17 GMT-04:00" name="addToReport" finished-at="2025-03-15T22:25:17 GMT-04:00" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToReport -->
       </class> <!-- Features.DeleteOperation -->
       <class name="Features.patchOperation">
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.patchOperation@6b81ce95]" started-at="2025-03-15T19:57:47 GMT-04:00" name="openapp" finished-at="2025-03-15T19:57:47 GMT-04:00" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.patchOperation@6b81ce95]" started-at="2025-03-15T22:25:16 GMT-04:00" name="openapp" finished-at="2025-03-15T22:25:16 GMT-04:00" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="CreateRepoInfo()[pri:0, instance:Features.patchOperation@6b81ce95]" started-at="2025-03-15T19:57:47 GMT-04:00" name="CreateRepoInfo" description="patho mugimeshi" finished-at="2025-03-15T19:57:47 GMT-04:00" duration-ms="485" status="PASS">
+        <test-method signature="CreateRepoInfo()[pri:0, instance:Features.patchOperation@6b81ce95]" started-at="2025-03-15T22:25:16 GMT-04:00" name="CreateRepoInfo" description="patho mugimeshi" finished-at="2025-03-15T22:25:16 GMT-04:00" duration-ms="472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateRepoInfo -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.patchOperation@6b81ce95]" started-at="2025-03-15T19:57:47 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T19:57:47 GMT-04:00" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.patchOperation@6b81ce95]" started-at="2025-03-15T22:25:16 GMT-04:00" name="PostConditionTestStatus" finished-at="2025-03-15T22:25:16 GMT-04:00" duration-ms="44" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -288,7 +288,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.patchOperation@6b81ce95]" started-at="2025-03-15T19:57:47 GMT-04:00" name="addToReport" finished-at="2025-03-15T19:57:47 GMT-04:00" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.patchOperation@6b81ce95]" started-at="2025-03-15T22:25:16 GMT-04:00" name="addToReport" finished-at="2025-03-15T22:25:16 GMT-04:00" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToReport -->
