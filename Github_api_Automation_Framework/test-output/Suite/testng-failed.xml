@@ -3,18 +3,8 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Features.DeleteOperation">
-        <methods>
-          <include name="extentReportSetUp"/>
-          <include name="PostConditionTestStatus"/>
-          <include name="addToReport"/>
-          <include name="DeleteRepo"/>
-          <include name="openapp"/>
-        </methods>
-      </class> <!-- Features.DeleteOperation -->
       <class name="Features.TestRepogetOperation">
         <methods>
-          <include name="GetRepoInfo"/>
           <include name="extentReportSetUp"/>
           <include name="PostConditionTestStatus"/>
           <include name="addToReport"/>
@@ -23,24 +13,6 @@
           <include name="openapp"/>
         </methods>
       </class> <!-- Features.TestRepogetOperation -->
-      <class name="Features.PostOperation">
-        <methods>
-          <include name="CreateRepoInfo"/>
-          <include name="extentReportSetUp"/>
-          <include name="PostConditionTestStatus"/>
-          <include name="addToReport"/>
-          <include name="openapp"/>
-        </methods>
-      </class> <!-- Features.PostOperation -->
-      <class name="Features.patchOperation">
-        <methods>
-          <include name="extentReportSetUp"/>
-          <include name="PostConditionTestStatus"/>
-          <include name="addToReport"/>
-          <include name="CreateRepoInfo"/>
-          <include name="openapp"/>
-        </methods>
-      </class> <!-- Features.patchOperation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

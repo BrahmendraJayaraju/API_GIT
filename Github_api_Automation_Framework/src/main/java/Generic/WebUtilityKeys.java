@@ -19,7 +19,6 @@ public class WebUtilityKeys {
 		} catch (Exception var4) {
 			var4.getStackTrace();
 		}
-
 		return properties.getProperty(locatorName);
 	}
 
