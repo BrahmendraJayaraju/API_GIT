@@ -132,12 +132,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Features.patchOperation" class="method navigator-link" hash-for-method="CreateRepoInfo">CreateRepoInfo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Features.PostOperation" class="method navigator-link" hash-for-method="CreateRepoInfo">CreateRepoInfo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Features.PostOperation" class="method navigator-link" hash-for-method="CreateRepoInfo">CreateRepoInfo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Features.patchOperation" class="method navigator-link" hash-for-method="CreateRepoInfo">CreateRepoInfo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -188,66 +188,76 @@
 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
 	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
-	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:495)
-	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:452)
+	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
 	at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1451)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1200)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1480)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$sendHttpRequest(RequestSpecificationImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1229)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
 	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
 	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
 	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
 	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
 	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
 	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
 	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy:183)
+	at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy:184)
 	at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy)
 	at Features.TestRepogetOperation.DeleteRepoFail(TestRepogetOperation.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -270,7 +280,7 @@
                   <a name="DeleteRepoSkip">
                   </a> <!-- DeleteRepoSkip -->
                   <span class="method-name">DeleteRepoSkip</span>
-                  <div class="stack-trace">java.lang.Throwable: Method TestRepogetOperation.DeleteRepoSkip()[pri:4, instance:Features.TestRepogetOperation@52bf72b5] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method TestRepogetOperation.DeleteRepoSkip()[pri:4, instance:Features.TestRepogetOperation@6c64cb25] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 18 stack frames
 </div> <!-- stack-trace -->
@@ -298,16 +308,16 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Features.DeleteOperation</span>
+              <span class="class-name">Features.PostOperation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="DeleteRepo">
-                  </a> <!-- DeleteRepo -->
-                  <span class="method-name">DeleteRepo</span>
+                  <a name="CreateRepoInfo">
+                  </a> <!-- CreateRepoInfo -->
+                  <span class="method-name">CreateRepoInfo</span>
                   <em>
-(deletemugimeshi)                  </em>
+(create  repo mugimeshi)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -332,16 +342,16 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Features.PostOperation</span>
+              <span class="class-name">Features.DeleteOperation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateRepoInfo">
-                  </a> <!-- CreateRepoInfo -->
-                  <span class="method-name">CreateRepoInfo</span>
+                  <a name="DeleteRepo">
+                  </a> <!-- DeleteRepo -->
+                  <span class="method-name">DeleteRepo</span>
                   <em>
-(create  repo mugimeshi)                  </em>
+(deletemugimeshi)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -447,27 +457,27 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'CreateRepoInfo')
 data.setCell(0, 2, 'Features.PostOperation')
-data.setCell(0, 3, 4388);
+data.setCell(0, 3, 4666);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'sendEmail')
 data.setCell(1, 2, 'Generic.SendReportEmail')
-data.setCell(1, 3, 839);
+data.setCell(1, 3, 1406);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'CreateRepoInfo')
 data.setCell(2, 2, 'Features.patchOperation')
-data.setCell(2, 3, 449);
+data.setCell(2, 3, 499);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'DeleteRepo')
 data.setCell(3, 2, 'Features.DeleteOperation')
-data.setCell(3, 3, 445);
+data.setCell(3, 3, 484);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'GetRepoInfo')
 data.setCell(4, 2, 'Features.TestRepogetOperation')
-data.setCell(4, 3, 229);
+data.setCell(4, 3, 261);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'DeleteRepoFail')
 data.setCell(5, 2, 'Features.TestRepogetOperation')
-data.setCell(5, 3, 30);
+data.setCell(5, 3, 39);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'DeleteRepoSkip')
 data.setCell(6, 2, 'Features.TestRepogetOperation')
@@ -476,7 +486,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -495,14 +505,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Features.DeleteOperation</span>
+              <span class="ignored-class-name">Features.TestRepogetOperation</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">extentReportSetUp</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Features.TestRepogetOperation</span>
+              <span class="ignored-class-name">Features.DeleteOperation</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">extentReportSetUp</span>
                 <br/>
@@ -530,101 +540,101 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">openapp</span>
-                <span class="method-start">590 ms</span>
+                <span class="method-start">549 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CreateRepoInfo</span>
-                <span class="method-start">1736 ms</span>
+                <span class="method-start">1263 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">PostConditionTestStatus([TestResult name=CreateRepoInfo status=SUCCESS method=PostOperation.CreateRepoInfo()[pri:0, instance...)</span>
-                <span class="method-start">6137 ms</span>
+                <span class="method-start">5942 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">addToReport</span>
-                <span class="method-start">6740 ms</span>
+                <span class="method-start">6548 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Features.patchOperation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openapp</span>
-                <span class="method-start">6779 ms</span>
+                <span class="method-start">6583 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CreateRepoInfo</span>
-                <span class="method-start">6781 ms</span>
+                <span class="method-start">6584 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">PostConditionTestStatus([TestResult name=CreateRepoInfo status=SUCCESS method=patchOperation.CreateRepoInfo()[pri:0, instanc...)</span>
-                <span class="method-start">7234 ms</span>
+                <span class="method-start">7087 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">addToReport</span>
-                <span class="method-start">7286 ms</span>
+                <span class="method-start">7129 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Features.TestRepogetOperation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openapp</span>
-                <span class="method-start">7319 ms</span>
+                <span class="method-start">7169 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">GetRepoInfo</span>
-                <span class="method-start">7320 ms</span>
+                <span class="method-start">7170 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">PostConditionTestStatus([TestResult name=GetRepoInfo status=SUCCESS method=TestRepogetOperation.GetRepoInfo()[pri:0, instanc...)</span>
-                <span class="method-start">7553 ms</span>
+                <span class="method-start">7433 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openapp</span>
-                <span class="method-start">7590 ms</span>
+                <span class="method-start">7467 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DeleteRepoFail</span>
-                <span class="method-start">7591 ms</span>
+                <span class="method-start">7468 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">PostConditionTestStatus([TestResult name=DeleteRepoFail status=FAILURE method=TestRepogetOperation.DeleteRepoFail()[pri:3, i...)</span>
-                <span class="method-start">7626 ms</span>
+                <span class="method-start">7515 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">DeleteRepoSkip</span>
-                <span class="method-start">7681 ms</span>
+                <span class="method-start">7588 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">addToReport</span>
-                <span class="method-start">7723 ms</span>
+                <span class="method-start">7629 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Features.DeleteOperation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openapp</span>
-                <span class="method-start">7751 ms</span>
+                <span class="method-start">7662 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">DeleteRepo</span>
-                <span class="method-start">7752 ms</span>
+                <span class="method-start">7663 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">PostConditionTestStatus([TestResult name=DeleteRepo status=SUCCESS method=DeleteOperation.DeleteRepo()[pri:0, instance:Featu...)</span>
-                <span class="method-start">8202 ms</span>
+                <span class="method-start">8153 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">addToReport</span>
-                <span class="method-start">8248 ms</span>
+                <span class="method-start">8189 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Generic.SendReportEmail</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">sendEmail</span>
-                <span class="method-start">8272 ms</span>
+                <span class="method-start">8209 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
