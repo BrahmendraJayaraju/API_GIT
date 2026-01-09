@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[The name of the repository whicis successcefully created ]]>
+    </line>
   </reporter-output>
-  <suite started-at="2026-01-08T23:20:59 GMT-05:00" name="Suite" finished-at="2026-01-08T23:21:05 GMT-05:00" duration-ms="6849">
+  <suite started-at="2026-01-08T23:36:44 GMT-05:00" name="Suite" finished-at="2026-01-08T23:36:54 GMT-05:00" duration-ms="9255">
     <groups>
       <group name="Regression">
         <method signature="DeleteOperation.Delete_Git_Repo()[pri:0, instance:Features.DeleteOperation@4e096385]" name="Delete_Git_Repo" class="Features.DeleteOperation"/>
@@ -11,357 +14,110 @@
         <method signature="PostOperation.Update_Repo()[pri:0, instance:Features.PostOperation@cad498c]" name="Update_Repo" class="Features.PostOperation"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2026-01-08T23:20:59 GMT-05:00" name="Test" finished-at="2026-01-08T23:21:05 GMT-05:00" duration-ms="6849">
+    <test started-at="2026-01-08T23:36:44 GMT-05:00" name="Test" finished-at="2026-01-08T23:36:54 GMT-05:00" duration-ms="9255">
       <class name="Features.PatchOperation">
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T23:21:04 GMT-05:00" name="openapp" finished-at="2026-01-08T23:21:04 GMT-05:00" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T23:36:52 GMT-05:00" name="openapp" finished-at="2026-01-08T23:36:52 GMT-05:00" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="Create_Repo()[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T23:21:04 GMT-05:00" name="Create_Repo" description="Update Git Repository" finished-at="2026-01-08T23:21:05 GMT-05:00" duration-ms="492" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <200> but was <401>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <401>.
-
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at Features.PatchOperation.Create_Repo(PatchOperation.java:44)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="Create_Repo()[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T23:36:52 GMT-05:00" name="Create_Repo" description="Update Git Repository" finished-at="2026-01-08T23:36:53 GMT-05:00" duration-ms="737" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Create_Repo -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T23:21:05 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T23:21:05 GMT-05:00" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T23:36:53 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T23:36:53 GMT-05:00" duration-ms="40" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Create_Repo status=FAILURE method=PatchOperation.Create_Repo()[pri:0, instance:Features.PatchOperation@1613674b] output={null}]]]>
+                <![CDATA[[TestResult name=Create_Repo status=SUCCESS method=PatchOperation.Create_Repo()[pri:0, instance:Features.PatchOperation@1613674b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T23:21:05 GMT-05:00" name="addToReport" finished-at="2026-01-08T23:21:05 GMT-05:00" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T23:36:53 GMT-05:00" name="addToReport" finished-at="2026-01-08T23:36:53 GMT-05:00" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToReport -->
       </class> <!-- Features.PatchOperation -->
       <class name="Features.PostOperation">
-        <test-method is-config="true" signature="extentReportSetUp()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T23:20:58 GMT-05:00" name="extentReportSetUp" finished-at="2026-01-08T23:20:59 GMT-05:00" duration-ms="425" status="PASS">
+        <test-method is-config="true" signature="extentReportSetUp()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T23:36:44 GMT-05:00" name="extentReportSetUp" finished-at="2026-01-08T23:36:44 GMT-05:00" duration-ms="442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportSetUp -->
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T23:20:59 GMT-05:00" name="openapp" finished-at="2026-01-08T23:20:59 GMT-05:00" duration-ms="704" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T23:36:44 GMT-05:00" name="openapp" finished-at="2026-01-08T23:36:45 GMT-05:00" duration-ms="720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="Update_Repo()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T23:20:59 GMT-05:00" name="Update_Repo" description="Create  Git Repository" finished-at="2026-01-08T23:21:03 GMT-05:00" duration-ms="3799" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <201> but was <401>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <201> but was <401>.
-
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at Features.PostOperation.Update_Repo(PostOperation.java:37)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="Update_Repo()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T23:36:45 GMT-05:00" name="Update_Repo" description="Create  Git Repository" finished-at="2026-01-08T23:36:51 GMT-05:00" duration-ms="5464" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[The name of the repository whicis successcefully created ]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Update_Repo -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T23:21:03 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T23:21:04 GMT-05:00" duration-ms="998" status="PASS">
+        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T23:36:51 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T23:36:52 GMT-05:00" duration-ms="1077" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Update_Repo status=FAILURE method=PostOperation.Update_Repo()[pri:0, instance:Features.PostOperation@cad498c] output={null}]]]>
+                <![CDATA[[TestResult name=Update_Repo status=SUCCESS method=PostOperation.Update_Repo()[pri:0, instance:Features.PostOperation@cad498c] output=The name of the repository whicis successcefully created ]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T23:21:04 GMT-05:00" name="addToReport" finished-at="2026-01-08T23:21:04 GMT-05:00" duration-ms="78" status="PASS">
+        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T23:36:52 GMT-05:00" name="addToReport" finished-at="2026-01-08T23:36:52 GMT-05:00" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToReport -->
       </class> <!-- Features.PostOperation -->
       <class name="Features.DeleteOperation">
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T23:21:05 GMT-05:00" name="openapp" finished-at="2026-01-08T23:21:05 GMT-05:00" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T23:36:53 GMT-05:00" name="openapp" finished-at="2026-01-08T23:36:53 GMT-05:00" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="Delete_Git_Repo()[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T23:21:05 GMT-05:00" name="Delete_Git_Repo" description="Delete Git Repository" finished-at="2026-01-08T23:21:05 GMT-05:00" duration-ms="186" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <204> but was <401>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <204> but was <401>.
-
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at Features.DeleteOperation.Delete_Git_Repo(DeleteOperation.java:43)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="Delete_Git_Repo()[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T23:36:53 GMT-05:00" name="Delete_Git_Repo" description="Delete Git Repository" finished-at="2026-01-08T23:36:54 GMT-05:00" duration-ms="474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Delete_Git_Repo -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T23:21:05 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T23:21:05 GMT-05:00" duration-ms="37" status="PASS">
+        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T23:36:54 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T23:36:54 GMT-05:00" duration-ms="27" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Delete_Git_Repo status=FAILURE method=DeleteOperation.Delete_Git_Repo()[pri:0, instance:Features.DeleteOperation@4e096385] output={null}]]]>
+                <![CDATA[[TestResult name=Delete_Git_Repo status=SUCCESS method=DeleteOperation.Delete_Git_Repo()[pri:0, instance:Features.DeleteOperation@4e096385] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T23:21:05 GMT-05:00" name="addToReport" finished-at="2026-01-08T23:21:05 GMT-05:00" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T23:36:54 GMT-05:00" name="addToReport" finished-at="2026-01-08T23:36:54 GMT-05:00" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToReport -->
       </class> <!-- Features.DeleteOperation -->
       <class name="Features.GetOperation">
-        <test-method signature="Get_Repo_Info()[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T23:21:05 GMT-05:00" name="Get_Repo_Info" description="Get Git Repo Details" finished-at="2026-01-08T23:21:05 GMT-05:00" duration-ms="188" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <200> but was <404>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <404>.
-
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at Features.GetOperation.Get_Repo_Info(GetOperation.java:29)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Get_Repo_Info -->
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T23:21:05 GMT-05:00" name="openapp" finished-at="2026-01-08T23:21:05 GMT-05:00" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T23:36:53 GMT-05:00" name="openapp" finished-at="2026-01-08T23:36:53 GMT-05:00" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T23:21:05 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T23:21:05 GMT-05:00" duration-ms="48" status="PASS">
+        <test-method signature="Get_Repo_Info()[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T23:36:53 GMT-05:00" name="Get_Repo_Info" description="Get Git Repo Details" finished-at="2026-01-08T23:36:53 GMT-05:00" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Get_Repo_Info -->
+        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T23:36:53 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T23:36:53 GMT-05:00" duration-ms="34" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Get_Repo_Info status=FAILURE method=GetOperation.Get_Repo_Info()[pri:0, instance:Features.GetOperation@27ff5d15] output={null}]]]>
+                <![CDATA[[TestResult name=Get_Repo_Info status=SUCCESS method=GetOperation.Get_Repo_Info()[pri:0, instance:Features.GetOperation@27ff5d15] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T23:21:05 GMT-05:00" name="addToReport" finished-at="2026-01-08T23:21:05 GMT-05:00" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T23:36:53 GMT-05:00" name="addToReport" finished-at="2026-01-08T23:36:53 GMT-05:00" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToReport -->
