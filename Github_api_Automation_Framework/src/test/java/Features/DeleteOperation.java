@@ -30,7 +30,7 @@ public class DeleteOperation extends Baseclass {
 
 
 		
-		System.out.println("TOKEN CHECK= " + token);
+		//removed
 
 		
 		String ownername=WebUtilityKeys.readPropertyFiles(Gitdata, "ownerName");
