@@ -26,13 +26,14 @@ public class PatchOperation extends Baseclass {
 
 		
 		
-		String reponame=WebUtilityKeys.readPropertyFiles(Gitdata, "repositoryname");
-		
-		String description=WebUtilityKeys.readPropertyFiles(Gitdata, "updaterepodescription");
-		String token=WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken");
+		String token = WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken");
+
+	
 	 String owner=WebUtilityKeys.readPropertyFiles(Gitdata, "ownerName");
 
+	String reponame=WebUtilityKeys.readPropertyFiles(Gitdata, "repositoryname");
 		
+		String description=WebUtilityKeys.readPropertyFiles(Gitdata, "updaterepodescription");
 		
 		
 		Project p1 = new Project(reponame,description);

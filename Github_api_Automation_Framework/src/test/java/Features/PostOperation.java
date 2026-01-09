@@ -29,9 +29,10 @@ public class PostOperation extends Baseclass {
 		Baseclass.createTestName("Testcase number TC9886", "Testername=brahmendra_jayaraju");
 
 		
-		String Token=WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken");
+		String token = WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken");
+
 		
-		Response resp = given().auth().oauth2(Token)
+		Response resp = given().auth().oauth2(token)
 				.contentType(ContentType.JSON).body(p).post(GitEndPoints.postoRepo);
 		resp.then().log().all().assertThat().statusCode(201).contentType(ContentType.JSON);
 

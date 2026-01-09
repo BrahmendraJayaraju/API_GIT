@@ -5,7 +5,7 @@
       <![CDATA[The name of the repository whicis successcefully created ]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-01-08T21:29:03 GMT-05:00" name="Suite" finished-at="2026-01-08T21:29:11 GMT-05:00" duration-ms="8243">
+  <suite started-at="2026-01-08T22:32:03 GMT-05:00" name="Suite" finished-at="2026-01-08T22:32:12 GMT-05:00" duration-ms="8920">
     <groups>
       <group name="Regression">
         <method signature="DeleteOperation.Delete_Git_Repo()[pri:0, instance:Features.DeleteOperation@4e096385]" name="Delete_Git_Repo" class="Features.DeleteOperation"/>
@@ -14,17 +14,17 @@
         <method signature="PostOperation.Update_Repo()[pri:0, instance:Features.PostOperation@cad498c]" name="Update_Repo" class="Features.PostOperation"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2026-01-08T21:29:03 GMT-05:00" name="Test" finished-at="2026-01-08T21:29:11 GMT-05:00" duration-ms="8243">
+    <test started-at="2026-01-08T22:32:03 GMT-05:00" name="Test" finished-at="2026-01-08T22:32:12 GMT-05:00" duration-ms="8920">
       <class name="Features.PatchOperation">
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T21:29:10 GMT-05:00" name="openapp" finished-at="2026-01-08T21:29:10 GMT-05:00" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T22:32:10 GMT-05:00" name="openapp" finished-at="2026-01-08T22:32:10 GMT-05:00" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="Create_Repo()[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T21:29:10 GMT-05:00" name="Create_Repo" description="Update Git Repository" finished-at="2026-01-08T21:29:10 GMT-05:00" duration-ms="739" status="PASS">
+        <test-method signature="Create_Repo()[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T22:32:10 GMT-05:00" name="Create_Repo" description="Update Git Repository" finished-at="2026-01-08T22:32:11 GMT-05:00" duration-ms="857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Create_Repo -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T21:29:10 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T21:29:11 GMT-05:00" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T22:32:11 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T22:32:11 GMT-05:00" duration-ms="48" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,28 +35,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T21:29:11 GMT-05:00" name="addToReport" finished-at="2026-01-08T21:29:11 GMT-05:00" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.PatchOperation@1613674b]" started-at="2026-01-08T22:32:11 GMT-05:00" name="addToReport" finished-at="2026-01-08T22:32:11 GMT-05:00" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToReport -->
       </class> <!-- Features.PatchOperation -->
       <class name="Features.PostOperation">
-        <test-method is-config="true" signature="extentReportSetUp()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T21:29:03 GMT-05:00" name="extentReportSetUp" finished-at="2026-01-08T21:29:03 GMT-05:00" duration-ms="407" status="PASS">
+        <test-method is-config="true" signature="extentReportSetUp()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T22:32:03 GMT-05:00" name="extentReportSetUp" finished-at="2026-01-08T22:32:03 GMT-05:00" duration-ms="480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportSetUp -->
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T21:29:03 GMT-05:00" name="openapp" finished-at="2026-01-08T21:29:04 GMT-05:00" duration-ms="712" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T22:32:03 GMT-05:00" name="openapp" finished-at="2026-01-08T22:32:04 GMT-05:00" duration-ms="700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="Update_Repo()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T21:29:04 GMT-05:00" name="Update_Repo" description="Create  Git Repository" finished-at="2026-01-08T21:29:09 GMT-05:00" duration-ms="4641" status="PASS">
+        <test-method signature="Update_Repo()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T22:32:04 GMT-05:00" name="Update_Repo" description="Create  Git Repository" finished-at="2026-01-08T22:32:09 GMT-05:00" duration-ms="4978" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[The name of the repository whicis successcefully created ]]>
             </line>
           </reporter-output>
         </test-method> <!-- Update_Repo -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T21:29:09 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T21:29:10 GMT-05:00" duration-ms="1028" status="PASS">
+        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T22:32:09 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T22:32:10 GMT-05:00" duration-ms="1018" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,21 +67,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T21:29:10 GMT-05:00" name="addToReport" finished-at="2026-01-08T21:29:10 GMT-05:00" duration-ms="60" status="PASS">
+        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.PostOperation@cad498c]" started-at="2026-01-08T22:32:10 GMT-05:00" name="addToReport" finished-at="2026-01-08T22:32:10 GMT-05:00" duration-ms="62" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToReport -->
       </class> <!-- Features.PostOperation -->
       <class name="Features.DeleteOperation">
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T21:29:11 GMT-05:00" name="openapp" finished-at="2026-01-08T21:29:11 GMT-05:00" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T22:32:12 GMT-05:00" name="openapp" finished-at="2026-01-08T22:32:12 GMT-05:00" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="Delete_Git_Repo()[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T21:29:11 GMT-05:00" name="Delete_Git_Repo" description="Delete Git Repository" finished-at="2026-01-08T21:29:11 GMT-05:00" duration-ms="487" status="PASS">
+        <test-method signature="Delete_Git_Repo()[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T22:32:12 GMT-05:00" name="Delete_Git_Repo" description="Delete Git Repository" finished-at="2026-01-08T22:32:12 GMT-05:00" duration-ms="629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Delete_Git_Repo -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T21:29:11 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T21:29:11 GMT-05:00" duration-ms="39" status="PASS">
+        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T22:32:12 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T22:32:12 GMT-05:00" duration-ms="32" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -92,21 +92,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T21:29:11 GMT-05:00" name="addToReport" finished-at="2026-01-08T21:29:11 GMT-05:00" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.DeleteOperation@4e096385]" started-at="2026-01-08T22:32:12 GMT-05:00" name="addToReport" finished-at="2026-01-08T22:32:12 GMT-05:00" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToReport -->
       </class> <!-- Features.DeleteOperation -->
       <class name="Features.GetOperation">
-        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T21:29:11 GMT-05:00" name="openapp" finished-at="2026-01-08T21:29:11 GMT-05:00" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T22:32:11 GMT-05:00" name="openapp" finished-at="2026-01-08T22:32:11 GMT-05:00" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="Get_Repo_Info()[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T21:29:11 GMT-05:00" name="Get_Repo_Info" description="Get Git Repo Details" finished-at="2026-01-08T21:29:11 GMT-05:00" duration-ms="231" status="PASS">
+        <test-method signature="Get_Repo_Info()[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T22:32:11 GMT-05:00" name="Get_Repo_Info" description="Get Git Repo Details" finished-at="2026-01-08T22:32:11 GMT-05:00" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Get_Repo_Info -->
-        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T21:29:11 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T21:29:11 GMT-05:00" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="PostConditionTestStatus(org.testng.ITestResult)[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T22:32:11 GMT-05:00" name="PostConditionTestStatus" finished-at="2026-01-08T22:32:11 GMT-05:00" duration-ms="87" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostConditionTestStatus -->
-        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T21:29:11 GMT-05:00" name="addToReport" finished-at="2026-01-08T21:29:11 GMT-05:00" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="addToReport()[pri:0, instance:Features.GetOperation@27ff5d15]" started-at="2026-01-08T22:32:11 GMT-05:00" name="addToReport" finished-at="2026-01-08T22:32:12 GMT-05:00" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToReport -->

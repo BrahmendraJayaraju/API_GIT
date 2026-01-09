@@ -26,11 +26,17 @@ public class DeleteOperation extends Baseclass {
 		
 		Baseclass.createTestName("Testcase number TC101", "Testername=brahmendra_jayaraju");
 		
-		String Token=WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken");
+		String token = WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken");
+
+		
+
+		
+		
+		
 		String ownername=WebUtilityKeys.readPropertyFiles(Gitdata, "ownerName");
 		String reponame=WebUtilityKeys.readPropertyFiles(Gitdata, "repositoryname");
 
-		given().auth().oauth2(Token).contentType(ContentType.JSON)
+		given().auth().oauth2(token).contentType(ContentType.JSON)
 				.pathParam("owner",ownername )
 				.pathParam("repo",reponame )
 				.delete(GitEndPoints.deleteRepo).then().log().all().assertThat().statusCode(204);
