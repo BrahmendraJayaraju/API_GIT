@@ -24,12 +24,22 @@ public class PatchOperation extends Baseclass {
 	public void Create_Repo() throws Exception {
 		Baseclass.createTestName("Testcase number TC3505", "Testername=brahmendra_jayaraju");
 
-		Project p1 = new Project(WebUtilityKeys.readPropertyFiles(Gitdata, "repositoryname"),
-				WebUtilityKeys.readPropertyFiles(Gitdata, "updaterepodescription"));
+		
+		
+		String reponame=WebUtilityKeys.readPropertyFiles(Gitdata, "repositoryname");
+		
+		String description=WebUtilityKeys.readPropertyFiles(Gitdata, "updaterepodescription");
+		String token=WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken");
+	 String owner=WebUtilityKeys.readPropertyFiles(Gitdata, "ownerName");
 
-		given().auth().oauth2(WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken")).contentType(ContentType.JSON)
-				.body(p1).pathParam("owner", WebUtilityKeys.readPropertyFiles(Gitdata, "ownerName"))
-				.pathParam("repo", WebUtilityKeys.readPropertyFiles(Gitdata, "repositoryname"))
+		
+		
+		
+		Project p1 = new Project(reponame,description);
+
+		given().auth().oauth2(token).contentType(ContentType.JSON)
+				.body(p1).pathParam(	"owner",owner)
+				.pathParam("repo",reponame )
 				.patch(GitEndPoints.updateRpo).then().log().all().assertThat().statusCode(200)
 				.contentType(ContentType.JSON);
 

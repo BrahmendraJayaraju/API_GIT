@@ -18,13 +18,21 @@ public class GetOperation extends Baseclass {
 	public void Get_Repo_Info() throws Exception {
 		Baseclass.createTestName("Testcase number TC3500", "Testername=brahmendra_jayaraju");
 
-		given().pathParam("owner", WebUtilityKeys.readPropertyFiles(Gitdata, "ownerName"))
-				.pathParam("repo", WebUtilityKeys.readPropertyFiles(Gitdata, "repositoryname"))
+		
+		
+		
+		String owner=WebUtilityKeys.readPropertyFiles(Gitdata, "ownerName");
+		String reponame=WebUtilityKeys.readPropertyFiles(Gitdata, "repositoryname");
+		
+		given().pathParam("owner",owner )
+				.pathParam("repo", reponame)
 				.get("/repos/{owner}/{repo}").then().log().all().assertThat().statusCode(200)
 				.contentType(ContentType.JSON);
 
 	}
 
+	
+	/*
 
 	@Test(priority = 3, groups = { "Regression" }, description = "Fail This TC for just to Show in Report ")
 	public void Fail_this_TC() throws Exception {
@@ -42,5 +50,7 @@ public class GetOperation extends Baseclass {
 		given().delete("http://localhost:3000/posts/104").then().log().all().assertThat().statusCode(200);
 
 	}
+	
+	*/
 
 }

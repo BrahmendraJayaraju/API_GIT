@@ -8,7 +8,7 @@
       <class name="Features.PatchOperation"/>
       <class name="Features.GetOperation"/>
       <class name="Features.DeleteOperation"/>
-      <class name="Generic.SendReportEmail"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

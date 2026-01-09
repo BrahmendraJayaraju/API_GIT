@@ -50,6 +50,15 @@
             <artifactId>rest-assured</artifactId>
             <version>5.4.0</version>
         </dependency>
+        
+        
+        
+        <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+<dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
 
         <!-- JSON Handling (Use Jackson Instead of json-simple) -->
         <dependency>
@@ -72,6 +81,15 @@
             <artifactId>extentreports</artifactId>
             <version>5.1.1</version>
         </dependency>
+        
+        
+        
+        <!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-mapper-asl -->
+<dependency>
+    <groupId>org.codehaus.jackson</groupId>
+    <artifactId>jackson-mapper-asl</artifactId>
+    <version>1.9.13</version>
+</dependency>
 
         <!-- SLF4J API for Logging -->
         <dependency>

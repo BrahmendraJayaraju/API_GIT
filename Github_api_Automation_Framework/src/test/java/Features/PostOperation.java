@@ -28,10 +28,16 @@ public class PostOperation extends Baseclass {
 	public void Update_Repo() throws Exception {
 		Baseclass.createTestName("Testcase number TC9886", "Testername=brahmendra_jayaraju");
 
-		Response resp = given().auth().oauth2(WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken"))
+		
+		String Token=WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken");
+		
+		Response resp = given().auth().oauth2(Token)
 				.contentType(ContentType.JSON).body(p).post(GitEndPoints.postoRepo);
 		resp.then().log().all().assertThat().statusCode(201).contentType(ContentType.JSON);
 
+		
+		
+		
 		// String gitreproName=resp.jsonPath().get("name");
 
 		Reporter.log("The name of the repository whicis successcefully created ");

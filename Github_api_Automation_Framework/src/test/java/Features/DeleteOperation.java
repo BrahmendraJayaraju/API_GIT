@@ -21,12 +21,18 @@ import static io.restassured.RestAssured.*;
 public class DeleteOperation extends Baseclass {
 
 	@Test(priority = 0, groups = { "Regression" }, description = "Delete Git Repository")
+	
 	public void Delete_Git_Repo() throws Exception {
+		
 		Baseclass.createTestName("Testcase number TC101", "Testername=brahmendra_jayaraju");
+		
+		String Token=WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken");
+		String ownername=WebUtilityKeys.readPropertyFiles(Gitdata, "ownerName");
+		String reponame=WebUtilityKeys.readPropertyFiles(Gitdata, "repositoryname");
 
-		given().auth().oauth2(WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken")).contentType(ContentType.JSON)
-				.pathParam("owner", WebUtilityKeys.readPropertyFiles(Gitdata, "ownerName"))
-				.pathParam("repo", WebUtilityKeys.readPropertyFiles(Gitdata, "repositoryname"))
+		given().auth().oauth2(Token).contentType(ContentType.JSON)
+				.pathParam("owner",ownername )
+				.pathParam("repo",reponame )
 				.delete(GitEndPoints.deleteRepo).then().log().all().assertThat().statusCode(204);
 
 	}
