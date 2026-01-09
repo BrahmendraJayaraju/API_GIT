@@ -28,10 +28,9 @@ public class DeleteOperation extends Baseclass {
 		
 		String token = WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken");
 
-		
 
 		
-		System.out.println("TOKEN CHECK = " + token);
+		System.out.println("TOKEN CHECK= " + token);
 
 		
 		String ownername=WebUtilityKeys.readPropertyFiles(Gitdata, "ownerName");
