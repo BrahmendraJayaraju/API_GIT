@@ -147,7 +147,7 @@ public class Baseclass {
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
+	
 
 	}
 
