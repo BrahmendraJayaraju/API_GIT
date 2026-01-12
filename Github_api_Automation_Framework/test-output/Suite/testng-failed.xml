@@ -3,15 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="features.PatchOperation">
+      <class name="features.PostOperation">
         <methods>
+          <include name="CREATE_Repo"/>
           <include name="PostConditionTestStatus"/>
           <include name="extentReportSetUp"/>
           <include name="addToReport"/>
-          <include name="Create_Repo"/>
           <include name="openapp"/>
         </methods>
-      </class> <!-- features.PatchOperation -->
+      </class> <!-- features.PostOperation -->
       <class name="features.DeleteOperation">
         <methods>
           <include name="PostConditionTestStatus"/>
@@ -21,15 +21,15 @@
           <include name="openapp"/>
         </methods>
       </class> <!-- features.DeleteOperation -->
-      <class name="features.PostOperation">
+      <class name="features.PatchOperation">
         <methods>
-          <include name="Update_Repo"/>
-          <include name="extentReportSetUp"/>
           <include name="PostConditionTestStatus"/>
+          <include name="extentReportSetUp"/>
+          <include name="UPDATE_CreateD_Repo"/>
           <include name="addToReport"/>
           <include name="openapp"/>
         </methods>
-      </class> <!-- features.PostOperation -->
+      </class> <!-- features.PatchOperation -->
       <class name="features.GetOperation">
         <methods>
           <include name="Get_Repo_Info"/>
