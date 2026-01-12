@@ -12,6 +12,33 @@
           <include name="openapp"/>
         </methods>
       </class> <!-- features.PostOperation -->
+      <class name="features.DeleteOperation">
+        <methods>
+          <include name="PostConditionTestStatus"/>
+          <include name="extentReportSetUp"/>
+          <include name="addToReport"/>
+          <include name="Delete_Git_Repo"/>
+          <include name="openapp"/>
+        </methods>
+      </class> <!-- features.DeleteOperation -->
+      <class name="features.PatchOperation">
+        <methods>
+          <include name="PostConditionTestStatus"/>
+          <include name="extentReportSetUp"/>
+          <include name="UPDATE_CreateD_Repo"/>
+          <include name="addToReport"/>
+          <include name="openapp"/>
+        </methods>
+      </class> <!-- features.PatchOperation -->
+      <class name="features.GetOperation">
+        <methods>
+          <include name="Get_Repo_Info"/>
+          <include name="PostConditionTestStatus"/>
+          <include name="extentReportSetUp"/>
+          <include name="addToReport"/>
+          <include name="openapp"/>
+        </methods>
+      </class> <!-- features.GetOperation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
