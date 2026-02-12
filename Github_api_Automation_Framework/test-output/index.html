@@ -153,6 +153,23 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">features.GetOperation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Get_Repo_Info">
+                  </a> <!-- Get_Repo_Info -->
+                  <span class="method-name">Get_Repo_Info</span>
+                  <em>
+(Get Git Repo Details)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">features.DeleteOperation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -180,23 +197,6 @@
                   <span class="method-name">UPDATE_CreateD_Repo</span>
                   <em>
 (Update Git Repository)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">features.GetOperation</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Get_Repo_Info">
-                  </a> <!-- Get_Repo_Info -->
-                  <span class="method-name">Get_Repo_Info</span>
-                  <em>
-(Get Git Repo Details)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -280,24 +280,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'CREATE_Repo')
 data.setCell(0, 2, 'features.PostOperation')
-data.setCell(0, 3, 9341);
+data.setCell(0, 3, 2254);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'UPDATE_CreateD_Repo')
-data.setCell(1, 2, 'features.PatchOperation')
-data.setCell(1, 3, 866);
+data.setCell(1, 1, 'Delete_Git_Repo')
+data.setCell(1, 2, 'features.DeleteOperation')
+data.setCell(1, 3, 606);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Delete_Git_Repo')
-data.setCell(2, 2, 'features.DeleteOperation')
-data.setCell(2, 3, 494);
+data.setCell(2, 1, 'UPDATE_CreateD_Repo')
+data.setCell(2, 2, 'features.PatchOperation')
+data.setCell(2, 3, 448);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'Get_Repo_Info')
 data.setCell(3, 2, 'features.GetOperation')
-data.setCell(3, 3, 270);
+data.setCell(3, 3, 267);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -322,6 +322,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">features.GetOperation</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">extentReportSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">features.DeleteOperation</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">extentReportSetUp</span>
@@ -330,13 +337,6 @@ return data;
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">features.PatchOperation</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">extentReportSetUp</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">features.GetOperation</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">extentReportSetUp</span>
                 <br/>
@@ -357,76 +357,76 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">openapp</span>
-                <span class="method-start">1131 ms</span>
+                <span class="method-start">197 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CREATE_Repo</span>
-                <span class="method-start">1946 ms</span>
+                <span class="method-start">420 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">PostConditionTestStatus([TestResult name=CREATE_Repo status=SUCCESS method=PostOperation.CREATE_Repo()[pri:0, instance:featu...)</span>
-                <span class="method-start">11340 ms</span>
+                <span class="method-start">2675 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">addToReport</span>
-                <span class="method-start">12473 ms</span>
+                <span class="method-start">2849 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">features.PatchOperation</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openapp</span>
-                <span class="method-start">12531 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">UPDATE_CreateD_Repo</span>
-                <span class="method-start">12536 ms</span>
+                <span class="method-start">2859 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">openapp</span>
+                <span class="method-start">2859 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">PostConditionTestStatus([TestResult name=UPDATE_CreateD_Repo status=SUCCESS method=PatchOperation.UPDATE_CreateD_Repo()[pri:...)</span>
-                <span class="method-start">13410 ms</span>
+                <span class="method-start">3309 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">addToReport</span>
-                <span class="method-start">13463 ms</span>
+                <span class="method-start">3320 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">features.GetOperation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openapp</span>
-                <span class="method-start">13514 ms</span>
+                <span class="method-start">3326 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Get_Repo_Info</span>
-                <span class="method-start">13516 ms</span>
+                <span class="method-start">3327 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">PostConditionTestStatus([TestResult name=Get_Repo_Info status=SUCCESS method=GetOperation.Get_Repo_Info()[pri:0, instance:fe...)</span>
-                <span class="method-start">13804 ms</span>
+                <span class="method-start">3596 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">addToReport</span>
-                <span class="method-start">13862 ms</span>
+                <span class="method-start">3607 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">features.DeleteOperation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openapp</span>
-                <span class="method-start">13896 ms</span>
+                <span class="method-start">3614 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Delete_Git_Repo</span>
-                <span class="method-start">13897 ms</span>
+                <span class="method-start">3615 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">PostConditionTestStatus([TestResult name=Delete_Git_Repo status=SUCCESS method=DeleteOperation.Delete_Git_Repo()[pri:0, inst...)</span>
-                <span class="method-start">14400 ms</span>
+                <span class="method-start">4224 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">addToReport</span>
-                <span class="method-start">14439 ms</span>
+                <span class="method-start">4236 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
