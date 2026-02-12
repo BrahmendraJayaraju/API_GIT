@@ -63,9 +63,7 @@
         </plugins>
     </build>
 
-    <!-- ===================== -->
-    <!--     DEPENDENCIES      -->
-    <!-- ===================== -->
+ 
     <dependencies>
 
         <!-- REST Assured -->
