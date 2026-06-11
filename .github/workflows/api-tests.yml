@@ -14,11 +14,9 @@ jobs:
       API_KEY: ${{ secrets.API_KEY }}
 
     steps:
-      # 1. Checkout code
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # 2. Setup Java
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
@@ -26,30 +24,31 @@ jobs:
           java-version: '17'
           cache: maven
 
-      # 3. Run Maven tests
       - name: Run Tests
-        run: mvn clean test
+        run: |
+          cd Github_api_Automation_Framework
+          mvn clean test
 
-      # 4. Upload full report folder
       - name: Upload API Report Artifact
         uses: actions/upload-artifact@v4
         with:
           name: api-test-report
-          path: apireports/
+          path: Github_api_Automation_Framework/apireports/
 
   deploy-report:
     needs: test
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
-      # 1. Checkout repo
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # 2. Deploy to GitHub Pages
       - name: Deploy Report
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: apireports
+          publish_dir: Github_api_Automation_Framework/apireports
