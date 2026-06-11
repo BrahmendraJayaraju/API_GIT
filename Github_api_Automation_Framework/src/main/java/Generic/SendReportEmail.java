@@ -1,12 +1,9 @@
 package Generic;
 
-import org.apache.commons.mail.DefaultAuthenticator;
-import org.apache.commons.mail.Email;
 import org.apache.commons.mail.EmailAttachment;
-import org.apache.commons.mail.EmailException;
+
 import org.apache.commons.mail.MultiPartEmail;
-import org.apache.commons.mail.SimpleEmail;
-import org.testng.annotations.AfterSuite;
+
 import org.testng.annotations.Test;
 
 public class SendReportEmail {
@@ -40,7 +37,6 @@ public class SendReportEmail {
 				email.setMsg(
 						"Hi Team,\n\nplease find attached Sanity automation ExtentReport. Download and open in Chrome Broswer.\n\n\nThanksRegards,\nBrahmendra jayaraju\n+1 (302) 981-6805");
 
-				
 				email.addTo("manu_1995_16@yopmail.net");
 
 			}
@@ -82,8 +78,6 @@ public class SendReportEmail {
 				email.setMsg(
 						"Hi Team,\n\nplease find attached Regression automation ExtentReport. Download and  open in Chrome Broswer.\n\n\nThanksRegards,\nBrahmendra jayaraju\n+1 (302) 981-6805");
 
-				
-
 				email.addTo("manu_1995_16@yopmail.net");
 
 			}
@@ -91,8 +85,6 @@ public class SendReportEmail {
 			catch (Exception e)
 
 			{
-
-				
 
 			}
 

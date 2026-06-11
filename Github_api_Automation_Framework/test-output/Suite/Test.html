@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 03 09:52:28 EST 2026</td>
+<td>Started on:</td><td>Wed Jun 10 21:36:27 EDT 2026</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4064 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4720 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,62 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='features.PatchOperation.UPDATE_CreateD_Repo()'><b>UPDATE_CreateD_Repo</b><br>Test class: features.PatchOperation<br>Test method: Update Git Repository</td>
+<td><div><pre>java.lang.AssertionError: Status Code Validation Failed expected [201] but found [200]
+	at Generic.Validations.validateStatusCode(Validations.java:14)
+	at features.PatchOperation.UPDATE_CreateD_Repo(PatchOperation.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1183403461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1183403461'><pre>java.lang.AssertionError: Status Code Validation Failed expected [201] but found [200]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at Generic.Validations.validateStatusCode(Validations.java:14)
+	at features.PatchOperation.UPDATE_CreateD_Repo(PatchOperation.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>features.PatchOperation@50313382</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,32 +132,34 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='features.PostOperation.CREATE_Repo()'><b>CREATE_Repo</b><br>Test class: features.PostOperation<br>Test method: Create  Git Repository<br/>
-<a href="#Output-1747327205" onClick='toggleBox("Output-1747327205", this, "Show output", "Hide output");'>Show output</a>
+<td title='features.DeleteOperation.Delete_Git_Repo()'><b>Delete_Git_Repo</b><br>Test class: features.DeleteOperation<br>Test method: Delete Git Repository<br/>
+<a href="#Output-467335937" onClick='toggleBox("Output-467335937", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1747327205" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1747327205">
-The name of the repository whic is successcefully created  is mugimeshi<br/>
+<a href="#Output-467335937" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-467335937">
+The repo successcefully deleted :mugimeshi-2038414006<br/>
 </div>
 </td>
 <td></td>
-<td>2</td>
-<td>features.PostOperation@29e495ff</td></tr>
+<td>0</td>
+<td>features.DeleteOperation@1cb346ea</td></tr>
 <tr>
 <td title='features.GetOperation.Get_Repo_Info()'><b>Get_Repo_Info</b><br>Test class: features.GetOperation<br>Test method: Get Git Repo Details</td>
 <td></td>
 <td>0</td>
-<td>features.GetOperation@732c2a62</td></tr>
+<td>features.GetOperation@52815fa3</td></tr>
 <tr>
-<td title='features.PatchOperation.UPDATE_CreateD_Repo()'><b>UPDATE_CreateD_Repo</b><br>Test class: features.PatchOperation<br>Test method: Update Git Repository</td>
+<td title='features.PostOperation.CREATE_Repo()'><b>CREATE_Repo</b><br>Test class: features.PostOperation<br>Test method: Create  Git Repository<br/>
+<a href="#Output-1895322165" onClick='toggleBox("Output-1895322165", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1895322165" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1895322165">
+The name of the repository which is successcefully created  is :mugimeshi-2038414006<br/>
+</div>
+</td>
 <td></td>
-<td>0</td>
-<td>features.PatchOperation@1ba9117e</td></tr>
-<tr>
-<td title='features.DeleteOperation.Delete_Git_Repo()'><b>Delete_Git_Repo</b><br>Test class: features.DeleteOperation<br>Test method: Delete Git Repository</td>
-<td></td>
-<td>0</td>
-<td>features.DeleteOperation@272ed83b</td></tr>
+<td>2</td>
+<td>features.PostOperation@6692b6c6</td></tr>
 </table><p>
 </body>
 </html>

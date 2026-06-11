@@ -4,8 +4,9 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="features.PostOperation"/>
-      <class name="features.PatchOperation"/>
       <class name="features.GetOperation"/>
+      <class name="features.PatchOperation"/> 
+      
       <class name="features.DeleteOperation"/>
 
     </classes>

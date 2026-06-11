@@ -1,57 +1,57 @@
 package features;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
 
 import Generic.WebUtilityKeys;
+import Generic.log;
 import Generic.Baseclass;
 import Generic.GitEndPoints;
-import github_api_automationframework.TestListeners;
-import io.restassured.http.ContentType;
+import Generic.TestDataStore;
+import Generic.Validations;
+
+import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
 
-@Listeners(TestListeners.class)
 public class GetOperation extends Baseclass {
 
 	@Test(priority = 0, groups = { "Regression" }, description = "Get Git Repo Details")
 	public void Get_Repo_Info() throws Exception {
 		Baseclass.createTestName("Testcase number TC3500", "Testername=brahmendra_jayaraju");
 
-		
-		
-		
-		String owner=WebUtilityKeys.readPropertyFiles(Gitdata, "ownerName");
-		String reponame=WebUtilityKeys.readPropertyFiles(Gitdata, "repositoryname");
-		
-		given().pathParam("owner",owner )
-				.pathParam("repo", reponame)
-				.get(GitEndPoints.getRepo ).then().log().all().assertThat().statusCode(200)
-				.contentType(ContentType.JSON);
+		String owner = WebUtilityKeys.readPropertyFiles(Gitdata, "ownerName");
+		String reponame = TestDataStore.repoName;
+		int id = TestDataStore.id;
+
+		Response resp = given().spec(reqSpec).pathParam("owner", owner).pathParam("repo", reponame).when()
+				.get(GitEndPoints.getRepo);
+
+		resp.then().spec(resSpec);
+
+		log.logAll(resp);
+
+		Validations.validateStatusCode(resp, 200);
+
+		Validations.validateStatusMessage(resp, "OK");
+
+		Validations.validateHeader(resp, "Server", "github.com");
+
+		Validations.validateHeaderContains(resp, "Content-Type", "application/json");
+
+		Validations.validateHeaderExists(resp, "X-RateLimit-Limit");
+
+		Validations.validateHeaderExists(resp, "X-GitHub-Request-Id");
+
+		Validations.validateField(resp, "owner.login", "BrahmendraJayaraju");
+
+		Validations.validateResponseTime(resp, 2000L);
+
+		Validations.validateField(resp, "name", reponame);
+
+		Validations.validateField(resp, "id", id);
+
+		Validations.validateSchema(resp, "schema_get_repo.json");
 
 	}
-
-	
-	/*
-
-	@Test(priority = 3, groups = { "Regression" }, description = "Fail This TC for just to Show in Report ")
-	public void Fail_this_TC() throws Exception {
-
-		Baseclass.createTestName("Testcase number TC9000", "Testername=shashank");
-		given().delete(" http://localhost:3000/posts/1070").then().log().all().assertThat().statusCode(200);
-
-	}
-
-	@Test(priority = 4, groups = { "Regression" }, description = "Skip  This TC for just to Show in Report", dependsOnMethods = {
-			"Fail_this_TC" })
-	public void Skip_TC() throws Exception {
-
-		Baseclass.createTestName("Testcase number TC789", "Testername=jayaraju");
-		given().delete("http://localhost:3000/posts/104").then().log().all().assertThat().statusCode(200);
-
-	}
-	
-	*/
 
 }

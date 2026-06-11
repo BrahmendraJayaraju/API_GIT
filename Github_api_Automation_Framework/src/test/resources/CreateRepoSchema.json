@@ -1,0 +1,191 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "node_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "private": {
+      "type": "boolean"
+    },
+
+    "owner": {
+      "type": "object",
+      "properties": {
+        "login": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "node_id": {
+          "type": "string"
+        },
+        "avatar_url": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "site_admin": {
+          "type": "boolean"
+        }
+      }
+    },
+
+    "html_url": {
+      "type": "string"
+    },
+
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "fork": {
+      "type": "boolean"
+    },
+
+    "created_at": {
+      "type": "string"
+    },
+
+    "updated_at": {
+      "type": "string"
+    },
+
+    "pushed_at": {
+      "type": "string"
+    },
+
+    "homepage": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "size": {
+      "type": "integer"
+    },
+
+    "stargazers_count": {
+      "type": "integer"
+    },
+
+    "watchers_count": {
+      "type": "integer"
+    },
+
+    "language": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "has_issues": {
+      "type": "boolean"
+    },
+
+    "has_projects": {
+      "type": "boolean"
+    },
+
+    "has_downloads": {
+      "type": "boolean"
+    },
+
+    "has_wiki": {
+      "type": "boolean"
+    },
+
+    "has_pages": {
+      "type": "boolean"
+    },
+
+    "forks_count": {
+      "type": "integer"
+    },
+
+    "archived": {
+      "type": "boolean"
+    },
+
+    "disabled": {
+      "type": "boolean"
+    },
+
+    "open_issues_count": {
+      "type": "integer"
+    },
+
+    "license": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+
+    "allow_forking": {
+      "type": "boolean"
+    },
+
+    "visibility": {
+      "type": "string"
+    },
+
+    "forks": {
+      "type": "integer"
+    },
+
+    "open_issues": {
+      "type": "integer"
+    },
+
+    "watchers": {
+      "type": "integer"
+    },
+
+    "default_branch": {
+      "type": "string"
+    },
+
+    "topics": {
+      "type": "array"
+    },
+
+    "permissions": {
+      "type": "object",
+      "properties": {
+        "admin": {
+          "type": "boolean"
+        },
+        "maintain": {
+          "type": "boolean"
+        },
+        "push": {
+          "type": "boolean"
+        },
+        "triage": {
+          "type": "boolean"
+        },
+        "pull": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

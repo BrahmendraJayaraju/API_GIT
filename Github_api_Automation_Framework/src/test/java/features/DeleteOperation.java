@@ -1,45 +1,37 @@
 
 package features;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
-
-import org.testng.annotations.Listeners;
-
 
 import Generic.WebUtilityKeys;
 import Generic.Baseclass;
 import Generic.GitEndPoints;
-
-
-import github_api_automationframework.TestListeners;
+import Generic.TestDataStore;
+import Generic.Validations;
 import io.restassured.http.ContentType;
-
+import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
 
-@Listeners(TestListeners.class)
 public class DeleteOperation extends Baseclass {
 
 	@Test(priority = 0, groups = { "Regression" }, description = "Delete Git Repository")
-	
+
 	public void Delete_Git_Repo() throws Exception {
-		
+
 		Baseclass.createTestName("Testcase number TC101", "Testername=brahmendra_jayaraju");
-		
-		String token = WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken");
 
+		String reponame = TestDataStore.repoName;
+		String owner = TestDataStore.owner;
 
-		
-		//removed
+		Response resp = given().spec(reqSpec).pathParam("owner", owner).pathParam("repo", reponame)
+				.delete(GitEndPoints.deleteRepo);
 
-		
-		String ownername=WebUtilityKeys.readPropertyFiles(Gitdata, "ownerName");
-		String reponame=WebUtilityKeys.readPropertyFiles(Gitdata, "repositoryname");
+		Validations.validateStatusCode(resp, 204);
+		Validations.validateStatusMessage(resp, "No Content");
 
-		given().auth().oauth2(token).contentType(ContentType.JSON)
-				.pathParam("owner",ownername )
-				.pathParam("repo",reponame )
-				.delete(GitEndPoints.deleteRepo).then().log().all().assertThat().statusCode(204);
+		Reporter.log("The repo successcefully deleted :" + reponame, true);
 
 	}
 

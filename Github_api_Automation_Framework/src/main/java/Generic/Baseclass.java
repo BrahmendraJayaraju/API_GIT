@@ -1,13 +1,20 @@
 package Generic;
+
 import java.util.TimeZone;
 
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import io.restassured.RestAssured;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -16,8 +23,11 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+public abstract class Baseclass {
 
-public class Baseclass {
+	public static String setUpData = "/src/test/resources/environment.properties";
+
+	public static String Gitdata = "/src/test/resources/data.properties";
 
 	public static ExtentReports reports;
 	public static ExtentSparkReporter htmlReporter;
@@ -25,31 +35,14 @@ public class Baseclass {
 	public static ExtentTest secondTest;
 	public static ExtentTest DeviceTest;
 
-	public static String setUpData = "/src/test/resources/environment.properties";
-
-	public static String Gitdata = "/src/test/resources/data.properties";
-
-	public static void createTestName(String testName, String Authorname) throws Exception {
-
-		String devicename = WebUtilityKeys.readPropertyFiles(setUpData, "Device");
-
-		mainTest = reports.createTest(testName).assignAuthor(Authorname).assignDevice(devicename);
-
-	}
-
-	public static void assignTestCategories(String pageName) {
-
-		// To get category tag names
-		mainTest.assignCategory(pageName);
-
-	}
+	public static RequestSpecification reqSpec;
+	public static ResponseSpecification resSpec;
 
 	@BeforeSuite
 	public void extentReportSetUp() throws Exception
 
 	{
 
-		
 		TimeZone.setDefault(TimeZone.getTimeZone("America/New_York"));
 		String ReportPath = "apireports/Git_Api_Report.html";
 
@@ -89,7 +82,17 @@ public class Baseclass {
 
 	@BeforeMethod
 	public void openapp() throws Exception {
-		RestAssured.baseURI = WebUtilityKeys.readPropertyFiles(Gitdata, "baseurl");
+
+		String url = WebUtilityKeys.readPropertyFiles(Gitdata, "baseurl");
+
+		String token = WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken");
+		String type = WebUtilityKeys.readPropertyFiles(Gitdata, "type");
+
+		reqSpec = new RequestSpecBuilder().setBaseUri(url).addHeader("Authorization", "Bearer " + token)
+				.setContentType(type).build();
+
+		resSpec = new ResponseSpecBuilder().expectContentType(type).build();
+
 	}
 
 	@AfterMethod
@@ -136,18 +139,26 @@ public class Baseclass {
 
 		}
 
-		reports.flush();
-
 	}
 
-	@AfterClass
+	@AfterSuite
 	public void addToReport() {
 		reports.flush();
 
 	}
 
-	public void onTestSkipped(ITestResult result) {
-	
+	public static void createTestName(String testName, String Authorname) throws Exception {
+
+		String devicename = WebUtilityKeys.readPropertyFiles(setUpData, "Device");
+
+		mainTest = reports.createTest(testName).assignAuthor(Authorname).assignDevice(devicename);
+
+	}
+
+	public static void assignTestCategories(String pageName) {
+
+		// To get category tag names
+		mainTest.assignCategory(pageName);
 
 	}
 

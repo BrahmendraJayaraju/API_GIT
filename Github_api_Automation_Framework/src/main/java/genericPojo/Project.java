@@ -1,5 +1,8 @@
 package genericPojo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Project {
 
 	// from git swagger
@@ -8,9 +11,7 @@ public class Project {
 	private String visibility;
 
 	// constructor overloading
-	
-	
-	
+
 	public Project(String name) {
 		super();
 		this.name = name;
@@ -25,12 +26,17 @@ public class Project {
 
 	}
 
+	public Project() {
 
+	}
+
+	// serialization
 
 	public String getName() {
 		return name;
 	}
 
+//deserialization 
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -43,9 +49,12 @@ public class Project {
 		this.description = description;
 	}
 
-	Project() 
-	{
+	public String getVisibility() {
+		return visibility;
+	}
 
+	public void setVisibility(String visibility) {
+		this.visibility = visibility;
 	}
 
 }

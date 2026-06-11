@@ -1,6 +1,11 @@
 package Generic;
 
 import java.io.FileInputStream;
+
+import static org.hamcrest.Matchers.*;
+
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
@@ -13,15 +18,9 @@ public class WebUtilityKeys {
 
 		try {
 			String projectpath = System.getProperty("user.dir");
-			
-			
-
-		
 
 			FileInputStream fileInputStream = new FileInputStream(projectpath + filePath);
-			
-			
-		
+
 			properties.load(fileInputStream);
 
 		} catch (Exception var4) {
@@ -29,8 +28,7 @@ public class WebUtilityKeys {
 		}
 		return properties.getProperty(locatorName);
 	}
-	
-	
+
 	public static int getRandomNumber() {
 
 		Random ran = new Random();
@@ -38,6 +36,5 @@ public class WebUtilityKeys {
 
 		return num;
 	}
-
 
 }
