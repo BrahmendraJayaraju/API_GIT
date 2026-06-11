@@ -85,7 +85,10 @@ public abstract class Baseclass {
 
 		String url = WebUtilityKeys.readPropertyFiles(Gitdata, "baseurl");
 
-		String token = WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken");
+		//String token = WebUtilityKeys.readPropertyFiles(Gitdata, "oathToken");
+		
+		String token=System.getenv("API_KEY");
+		
 		String type = WebUtilityKeys.readPropertyFiles(Gitdata, "type");
 
 		reqSpec = new RequestSpecBuilder().setBaseUri(url).addHeader("Authorization", "Bearer " + token)

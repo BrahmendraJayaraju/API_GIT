@@ -4,12 +4,12 @@ package features;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import Generic.WebUtilityKeys;
+
 import Generic.Baseclass;
 import Generic.GitEndPoints;
 import Generic.TestDataStore;
 import Generic.Validations;
-import io.restassured.http.ContentType;
+
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
