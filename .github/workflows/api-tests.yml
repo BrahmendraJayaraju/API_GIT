@@ -6,6 +6,9 @@ on:
       - feature/api-tests
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -30,6 +33,7 @@ jobs:
           mvn clean test
 
       - name: Upload API Report Artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: api-test-report
@@ -37,10 +41,8 @@ jobs:
 
   deploy-report:
     needs: test
+    if: always()
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout Repository
