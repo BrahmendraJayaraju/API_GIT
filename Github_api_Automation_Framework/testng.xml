@@ -6,7 +6,6 @@
       <class name="features.PostOperation"/>
       <class name="features.GetOperation"/>
       <class name="features.PatchOperation"/> 
-      
       <class name="features.DeleteOperation"/>
 
     </classes>
