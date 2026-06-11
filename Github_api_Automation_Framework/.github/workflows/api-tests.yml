@@ -1,10 +1,10 @@
-name: API Tests
+name: API Tests Workflow
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - feature/api-tests
+  workflow_dispatch:
 
 jobs:
   test:
@@ -14,14 +14,39 @@ jobs:
       API_KEY: ${{ secrets.API_KEY }}
 
     steps:
-      - name: Checkout code
+      # 1. Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Java
+      # 2. Setup Java
+      - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
 
-      - name: Run tests
+      # 3. Run Maven tests
+      - name: Run Tests
         run: mvn clean test
+
+      # 4. Upload HTML report as artifact
+      - name: Upload API Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-test-report
+          path: apireports/Git_api_Report.html
+
+  deploy-report:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 5. Deploy report to GitHub Pages (LIVE LINK)
+      - name: Deploy Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: apireports
